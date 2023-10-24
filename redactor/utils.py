@@ -2,9 +2,9 @@ from django.core.exceptions import ImproperlyConfigured
 from importlib import import_module
 
 try:
-    from django.utils.encoding import force_text
+    from django.utils.encoding import force_str
 except ImportError:
-    from django.utils.encoding import force_unicode as force_text
+    from django.utils.encoding import force_text as force_str
 from django.utils.functional import Promise
 
 import json
